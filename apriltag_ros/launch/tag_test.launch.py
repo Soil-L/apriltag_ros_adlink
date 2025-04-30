@@ -8,8 +8,8 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     # 获取参数
-    image_topic_ = LaunchConfiguration("image_topic", default="image_raw")
-    camera_name = LaunchConfiguration("camera_name", default="/camera/color")
+    image_topic_ = LaunchConfiguration("image_topic", default="/camera/color/image_raw")
+    camera_name = LaunchConfiguration("camera_name", default="/camera/color/camera_info")
 
     # 使用 PathJoinSubstitution 或 TextSubstitution 拼接字符串
     image_topic = PathJoinSubstitution([camera_name, image_topic_])  # 生成 "/camera/color/image_raw"
