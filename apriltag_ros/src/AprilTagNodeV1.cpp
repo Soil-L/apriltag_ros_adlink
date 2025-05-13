@@ -64,7 +64,7 @@ AprilTagNode::AprilTagNode(rclcpp::NodeOptions options)
   tag_family(declare_parameter<std::string>("family", "36h11")),
   tag_edge_size(declare_parameter<double>("size", 2.0)),
   max_hamming(declare_parameter<int>("max_hamming", 0)),
-  z_up(declare_parameter<bool>("z_up", false)),
+  z_up(declare_parameter<bool>("z_up", true)),
 
   // topics
   sub_cam(image_transport::create_camera_subscription(
