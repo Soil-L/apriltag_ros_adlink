@@ -16,5 +16,5 @@
     refine-edges: 1         # snap to strong gradients
     debug: 0                # write additional debugging images to current working directory
     tag_ids: [0,1]            # tag ID
-    tag_frames: [world,object]  # optional frame name
+    tag_frames: [workspace,object]  # optional frame name
     tag_sizes: [0.04,0.04]   # optional tag-specific edge size
